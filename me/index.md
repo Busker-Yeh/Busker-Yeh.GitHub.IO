@@ -2,4 +2,4 @@
 layout: about
 ---
 
-Hello, my name is Yeh.
+Hello, I'm Yeh, a busker at Canberra.
