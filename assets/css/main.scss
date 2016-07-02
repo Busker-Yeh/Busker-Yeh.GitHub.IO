@@ -66,6 +66,7 @@ ul {
     background-color:#dddddd;
     @media screen and (max-width: $br) {
 		display: block;
+		justify-content: space-between;
     }
     h1 {
         font-size: 2em;
