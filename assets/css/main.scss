@@ -78,9 +78,9 @@ ul {
     }
     @media screen and (max-width: $br) {
 		display: block;
+		margin-left: auto;
+		margin-right: auto;
 		ul {
-			margin-left: auto;
-			margin-right: auto;
 			li {
 				display: inline;
 				padding: 0;
