@@ -78,6 +78,7 @@ ul {
     }
     @media screen and (max-width: $br) {
 		display: block;
+		align-items: center;
 		ul {
 			li {
 				display: inline;
