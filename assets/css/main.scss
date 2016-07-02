@@ -77,7 +77,14 @@ ul {
         }
     }
     @media screen and (max-width: $br) {
-		display: flex;
+		display: block;
+		ul {
+			margin-top: 10px;
+			li {
+				display: inline;
+				padding: 0;
+			}
+		}
     }
 }
 
