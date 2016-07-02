@@ -60,8 +60,8 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 20px,40px,40px,20px;
-    background-color:yellow;
+    padding: 20px,60px,60px,20px;
+    background-color:grey;
     @media screen and (max-width: $br) {
         display: block;
     }
