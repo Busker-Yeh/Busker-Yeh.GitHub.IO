@@ -65,7 +65,8 @@ ul {
     padding-left:20px;
     background-color:#dddddd;
     @media screen and (max-width: $br) {
-        display: block;
+		display: flex;
+		justify-content: space-between;
     }
     h1 {
         font-size: 2em;
