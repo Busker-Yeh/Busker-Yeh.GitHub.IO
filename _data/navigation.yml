@@ -1,8 +1,8 @@
-- title: INDEX
+- title: index
   url: /
 
-- title: ABOUT
+- title: about
   url: /me
 
-- title: WORKS
+- title: works
   url: /works
