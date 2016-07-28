@@ -34,6 +34,15 @@ layout: default
 			{% endunless %}
 		{% endif %}
 	{% endfor %}
+	
+	{% comment %}
+	=======================
+	The purpose of this snippet is to list all the tags you have in your site.
+	=======================
+	{% endcomment %}
+	{% for tag in tags %}
+		<li style="float: left;"><a style="text-transform:uppercase;" href="#{{ tag | slugify }}"> {{ tag }}</a></li>
+	{% endfor %}
     
     <h1 class="archive__title">My Archive ({{ site.posts | size }} posts):</h1>
     <div class="archive__content">
@@ -41,15 +50,6 @@ layout: default
     </div>
     
     <h1 class="archive__title">Posts by Tag:</h1>
-
-	{% comment %}
-	=======================
-	The purpose of this snippet is to list all the tags you have in your site.
-	=======================
-	{% endcomment %}
-	{% for tag in tags %}
-		<a href="#{{ tag | slugify }}"> {{ tag }} </a>
-	{% endfor %}
 
 
 
