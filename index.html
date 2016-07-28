@@ -22,7 +22,7 @@ layout: default
     <ul>
         {% for post in site.posts limit:3 %}
         <li>
-            <span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>
+            <span class="date">{{ post.date | date: '%Y %b %d' }}</span>&nbsp;-&nbsp;<a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>
         </li>
         {% endfor %}
         <li><a style="text-transform:capitalize;" href="/archive">Previous Posts</a></li>
