@@ -60,7 +60,7 @@ layout: default
 	=======================
 	{% endcomment %}
 	{% for tag in tags %}
-		<h2 id="{{ tag | slugify }}" style="text-transform:capitalize;">{{ tag }}:</h2>
+		<li><h2 id="{{ tag | slugify }}" style="text-transform:capitalize;">{{ tag }}:</h2></li>
 		<ul>
 		 {% for post in site.posts %}
 			 {% if post.tags contains tag %}
