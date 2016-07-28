@@ -1,7 +1,6 @@
 ---
 layout: post
 title: my first blog
-category: diary
 tags: [life, idea]
 ---
 
