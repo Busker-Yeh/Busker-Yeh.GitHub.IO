@@ -4,6 +4,12 @@ layout: default
 
 {% include header.html %}
 
+	<p>
+		{% for category in site.categories %}
+		{{ category | first }},&nbsp;
+		{% endfor %}
+	</p>
+
 <!--
 <div class="portfolio">
     <h1>Yeh, a busker at Canberra</h1>
