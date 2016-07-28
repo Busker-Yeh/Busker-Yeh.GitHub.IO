@@ -5,10 +5,12 @@ layout: default
 <div class="post">
 	<a class="post__back" href="/">&lt;-- back</a>
 	<h1 style="text-transform:uppercase;" class="post__title">{{ page.title }}</h1>
-	{% for category in site.categories %}
-	<p class="post__date">{{ page.date | date: '%B %-d, %Y' }} {{ category | first }}</p>
-	{% endfor %}
-
+	<p class="post__date">{{ page.date | date: '%B %-d, %Y' }}</p>
+	<p>
+		{% for category in site.categories %}
+		{{ category | first }},&nbsp;
+		{% endfor %}
+	</p>
 
 
 
