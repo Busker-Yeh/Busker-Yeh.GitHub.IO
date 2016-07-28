@@ -41,7 +41,9 @@ layout: default
 	=======================
 	{% endcomment %}
 	{% for tag in tags %}
+	<ul>
 		<li style="float: left;"><a style="text-transform:uppercase;" href="#{{ tag | slugify }}"> {{ tag }}</a></li>
+	</ul>
 	{% endfor %}
     
     <h1 class="archive__title">My Archive ({{ site.posts | size }} posts):</h1>
