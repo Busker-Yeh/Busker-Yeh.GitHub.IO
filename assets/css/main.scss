@@ -63,7 +63,6 @@ ul {
     align-items: baseline;
     */
     
-    display:block;
     text-align:center;
     
     padding-top:40px;
@@ -72,6 +71,8 @@ ul {
     padding-left:20px;
     
     background-color:#dddddd;
+    
+    display:block;
     
     h1 {
         font-size: 2em;
