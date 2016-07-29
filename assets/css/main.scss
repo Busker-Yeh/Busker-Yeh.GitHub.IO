@@ -62,6 +62,8 @@ ul {
     align-items: baseline;
     */
     display: flex;
+    display: -webkit-flex; /* Safari */
+    justify-content: center;
     padding-top:40px;
     padding-right:20px;
     padding-bottom:40px;
