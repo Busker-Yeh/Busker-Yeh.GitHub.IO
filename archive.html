@@ -6,8 +6,12 @@ layout: default
 	
     <a class="archive__back" href="/">&lt;-- back</a>
     
-    <p>{{ site.posts | size }} Total Posts, {{ site.tags | size }} Tags, {{ site.categories | size }} Categories</p>
-	
+    <h1 class="archive__title">Totally:</h1>
+    <ul>
+		<li><a>{{ site.posts | size }} Posts</a></li>
+		<li><a>{{ site.tags | size }} Tags</a></li>
+		<li><a>{{ site.categories | size }} Categories</a></li>
+	</u>
     <h1 class="archive__title">Categories:</h1>
     
 	{% assign rawcategories = "" %}
