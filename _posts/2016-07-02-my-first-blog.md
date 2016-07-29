@@ -1,6 +1,7 @@
 ---
 layout: post
 title: my first blog
+category: Dev
 tags: log
 ---
 
