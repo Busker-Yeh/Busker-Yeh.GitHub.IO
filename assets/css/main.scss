@@ -56,10 +56,14 @@ ul {
 
 
 .header {
+	/*
     display: flex;
     display: -webkit-flex; /* Safari */
     justify-content: space-between;
     align-items: baseline;
+    */
+    
+    display:block;
     
     padding-top:40px;
     padding-right:20px;
@@ -71,6 +75,7 @@ ul {
     h1 {
         font-size: 2em;
         margin-bottom: 0;
+        text-align:center;
     }
     ul {
         margin-top: 10px;
