@@ -26,7 +26,13 @@ layout: default
 				{% assign categories = categories | join:'|' | append:'|' | append:tag | split:'|' %}
 			{% endunless %}
 		{% endif %}
-	{% endfor %}	
+	{% endfor %}
+	
+	{% for category in categories %}
+	<ul>
+		<li><a style="text-transform:capitalize;" href="#{{ tag | slugify }}">{{ category }}</a></li>
+	</ul>
+	{% endfor %}
 	
     <h1 class="archive__title">Tags ({{ site.tags | size }} tags):</h1>
     
