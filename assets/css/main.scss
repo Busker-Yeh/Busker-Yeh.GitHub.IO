@@ -56,20 +56,11 @@ ul {
 
 
 .header {
-    display: flex;
-    display: -webkit-flex;
-    justify-content: space-between;
-    align-items: baseline;
-    
-   display: block;
-   text-align: center;
-    
     padding-top:40px;
     padding-right:20px;
     padding-bottom:40px;
     padding-left:20px;
     
-    text-align:center;
     background-color:#dddddd;
     
     h1 {
@@ -77,25 +68,6 @@ ul {
         margin-bottom: 0;
         text-align:center;
     }
-    
-    ul {
-        margin-top: 10px;
-        li {
-            display: inline;
-            padding: 0;
-            padding-left: 5px;
-        }
-    }
-    @media screen and (max-width: $br) {
-		display: block;
-		ul {
-			li {
-				display: inline;
-				padding: 0;
-			}
-		}
-    }
-}
 
 
 .portfolio {
