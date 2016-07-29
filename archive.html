@@ -8,7 +8,7 @@ layout: default
     
     <p>There are totally {{ site.posts | size }} posts with {{ site.categories | size }} categories and {{ site.tags | size }} tags.</p>
 	
-    <h1 class="archive__title">Categories ({{ site.categories | size }} categories):</h1>
+    <h1 class="archive__title">Categories:</h1>
     
 	{% assign rawcategories = "" %}
 	{% for post in site.posts %}
@@ -38,7 +38,7 @@ layout: default
 	
 	
 	
-    <h1 class="archive__title">Tags ({{ site.tags | size }} tags):</h1>
+    <h1 class="archive__title">Tags:</h1>
     
 	{% comment %}
 	=======================
@@ -80,7 +80,7 @@ layout: default
 	</ul>
 	{% endfor %}
 
-    <h1 class="archive__title">Posts by Date ({{ site.posts | size }} posts):</h1>
+    <h1 class="archive__title">Posts by Date:</h1>
     <div class="archive__content">
 	<ul>
 		{% for post in site.posts limit:3 %}
