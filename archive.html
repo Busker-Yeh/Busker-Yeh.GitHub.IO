@@ -30,9 +30,11 @@ layout: default
 	
 	{% for category in categories %}
 	<ul>
-		<li><a style="text-transform:capitalize;" href="#{{ tag | slugify }}">{{ category }}</a></li>
+		<li><a style="text-transform:capitalize;" href="#{{ category | slugify }}">{{ category }}</a></li>
 	</ul>
 	{% endfor %}
+	
+	
 	
     <h1 class="archive__title">Tags ({{ site.tags | size }} tags):</h1>
     
