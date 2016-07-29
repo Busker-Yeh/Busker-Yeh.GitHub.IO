@@ -56,19 +56,18 @@ ul {
 
 
 .header {
-    /*
+    display: -webkit-flex; /* Safari */
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    */
-    display: flex;
-    display: -webkit-flex; /* Safari */
-    justify-content: center;
+    
     padding-top:40px;
     padding-right:20px;
     padding-bottom:40px;
     padding-left:20px;
+    
     background-color:#dddddd;
+    
     h1 {
         font-size: 2em;
         margin-bottom: 0;
