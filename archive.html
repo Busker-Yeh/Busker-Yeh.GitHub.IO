@@ -99,10 +99,7 @@ layout: default
 		{% for post in site.posts %}
 			{% if post.categories contains category %}
 			<li>
-				<a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>&nbsp;<span class="date">({{ post.date | date: '%Y %b %d' }})</span>&nbsp;-&nbsp;
-				{% for category in post.categories %}
-				<a class="category" href="#{{ category | slugify }}">{{ category }},</a>
-				{% endfor %}
+				<a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>&nbsp;<span class="date">({{ post.date | date: '%Y %b %d' }})</span>
 			</li>
 			{% endif %}
 		{% endfor %}
