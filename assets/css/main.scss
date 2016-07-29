@@ -61,23 +61,24 @@ ul {
     display: -webkit-flex; /* Safari */
     justify-content: space-between;
     align-items: baseline;
-    */
-    
-    text-align:center;
-    
     padding-top:40px;
     padding-right:20px;
     padding-bottom:40px;
     padding-left:20px;
+    */
+    
+    text-align:center;
+   
     
     background-color:#dddddd;
-    
     display:block;
     
     h1 {
         font-size: 2em;
         margin-bottom: 0;
     }
+    
+    /*
     ul {
         margin-top: 10px;
         li {
@@ -95,6 +96,7 @@ ul {
 			}
 		}
     }
+    */
 }
 
 
