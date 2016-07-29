@@ -8,11 +8,11 @@ layout: default
     
     <h1 class="archive__title">Totally:</h1>
     <ul>
-		<li><a>{{ site.posts | size }} Posts</a></li>
-		<li><a>{{ site.tags | size }} Tags</a></li>
-		<li><a>{{ site.categories | size }} Categories</a></li>
+		<li><a href="#posts">{{ site.posts | size }} Posts</a></li>
+		<li><a href="#tags">{{ site.tags | size }} Tags</a></li>
+		<li><a href="#categories">{{ site.categories | size }} Categories</a></li>
 	</u>
-    <h1 class="archive__title">Categories:</h1>
+    <h1 id="categories" class="archive__title">Categories:</h1>
     
 	{% assign rawcategories = "" %}
 	{% for post in site.posts %}
