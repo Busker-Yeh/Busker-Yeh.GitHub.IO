@@ -6,6 +6,27 @@ layout: default
 	
     <a class="archive__back" href="/">&lt;-- back</a>
     
+    <ul class="tab">
+	  <li><a href="#" class="tablinks" onclick="openType(event, 'Posts')">{{ site.posts | size }} Posts</a></li>
+	  <li><a href="#" class="tablinks" onclick="openType(event, 'Tags')">{{ site.tags | size }} Tags</a></li>
+	  <li><a href="#" class="tablinks" onclick="openType(event, 'Categories')">{{ site.categories | size }} Categories</a></li>
+	</ul>
+    
+    <div id="Posts" class="tabcontent">
+	  <h3>Posts</h3>
+	  <p>{{ site.posts | size }} Posts</p>
+	</div>
+    
+	<div id="Tags" class="tabcontent">
+	  <h3>Tags</h3>
+	  <p>Tags</p>
+	</div>
+
+	<div id="Categories" class="tabcontent">
+	  <h3>Categories</h3>
+	  <p>Categories</p>
+	</div>
+    
     <h1 class="archive__title">Summary:</h1>
     <ul>
 		<li><a href="#posts">{{ site.posts | size }} Posts</a></li>
@@ -139,3 +160,20 @@ layout: default
 
 
 <img src="assets/img/instruments.jpg"  style="max-width:100%;" />
+
+
+<script>
+function openType(evt, typeName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
