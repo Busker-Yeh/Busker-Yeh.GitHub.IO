@@ -14,17 +14,38 @@ layout: default
 	</ul>
     
     <div id="Posts" class="tabcontent">
-	  <h3>Posts</h3>
-	  <p><a href="#posts">{{ site.posts | size }} Posts</a></p>
+		<div class="archive__content">
+		<ul>
+			{% for post in site.posts limit:3 %}
+			<li>
+				<span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+		</div>
+		
+		<h1 class="archive__title">Posts by Category:</h1>
+		<div class="archive__content">
+		{% for category in categories %}
+			<h2 id="{{ category | slugify }}" style="text-transform:capitalize;">{{ category }}:</h2>
+			<ul>
+			{% for post in site.posts %}
+				{% if post.categories contains category %}
+				<li>
+					<a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>&nbsp;<span class="date">({{ post.date | date: '%Y %b %d' }})</span>
+				</li>
+				{% endif %}
+			{% endfor %}
+			</ul>
+		{% endfor %}
+		</div>
 	</div>
     
 	<div id="Tags" class="tabcontent">
-	  <h3>Tags</h3>
 	  <p><a href="#tags">{{ site.tags | size }} Tags</a></p>
 	</div>
 
 	<div id="Categories" class="tabcontent">
-	  <h3>Categories</h3>
 	  <p><a href="#categories">{{ site.categories | size }} Categories</a></p>
 	</div>
 	
