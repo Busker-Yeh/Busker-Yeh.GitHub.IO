@@ -99,7 +99,6 @@ layout: default
 		<!-- try... -->
 		<div class="archive__content">
 		{% for category in categories %}
-			<!-- h2 id="{{ category | slugify }}" style="text-transform:capitalize;">{{ category }}:</h2 -->
 			<div id="{{ category }}" class="tabcontent">
 			<ul>
 			{% for post in site.posts %}
