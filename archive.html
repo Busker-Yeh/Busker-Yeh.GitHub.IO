@@ -97,20 +97,20 @@ layout: default
 		{% endfor %}
 		
 		<!-- try... -->
-			<div class="archive__content">
-			{% for category in categories %}
-				<h2 id="{{ category | slugify }}" style="text-transform:capitalize;">{{ category }}:</h2>
-				<ul>
-				{% for post in site.posts %}
-					{% if post.categories contains category %}
-					<li>
-						<a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>&nbsp;<span class="date">({{ post.date | date: '%Y %b %d' }})</span>
-					</li>
-					{% endif %}
-				{% endfor %}
-				</ul>
+		<div class="archive__content">
+		{% for category in categories %}
+			<h2 id="{{ category | slugify }}" style="text-transform:capitalize;">{{ category }}:</h2>
+			<ul id="{{category}}">
+			{% for post in site.posts %}
+				{% if post.categories contains category %}
+				<li>
+					<a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>&nbsp;<span class="date">({{ post.date | date: '%Y %b %d' }})</span>
+				</li>
+				{% endif %}
 			{% endfor %}
-			</div>
+			</ul>
+		{% endfor %}
+		</div>
 	</div>
 	
     <img src="assets/img/instruments.jpg"  style="max-width:100%;" />	
