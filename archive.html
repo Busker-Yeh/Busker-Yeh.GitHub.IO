@@ -125,7 +125,7 @@ layout: default
 
 	<!-- try... categories... -->
 <div class="archive">
-	<div class="archive__content">
+
 	{% for category in categories %}
 			<ul class="tab">
 			{% for post in site.posts %}
@@ -137,7 +137,6 @@ layout: default
 			{% endfor %}
 			</ul>
 	{% endfor %}
-	</div>
 	
 	<div class="archive__content">
 		{% assign rawcategories = "" %}
