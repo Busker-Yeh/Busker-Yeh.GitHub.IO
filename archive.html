@@ -13,6 +13,7 @@ layout: default
 	  <li><a href="#" class="tablinks" onclick="openType(event, 'Categories')">{{ site.categories | size }} Categories</a></li>
 	</ul>
     
+    <!-- Posts -->
     <div id="Posts" class="tabcontent">
 		<ul>
 			{% for post in site.posts limit:3 %}
@@ -22,7 +23,8 @@ layout: default
 			{% endfor %}
 		</ul>
 	</div>
-    
+
+    <!-- Tags -->
 	<div id="Tags" class="tabcontent">
 		{% comment %}
 		=======================
@@ -59,12 +61,13 @@ layout: default
 		=======================
 		{% endcomment %}
 		{% for tag in tags %}
-		<ul>
+		<ul class="tab">
 			<li><a style="text-transform:capitalize;" href="#{{ tag | slugify }}">{{ tag }}</a></li>
 		</ul>
 		{% endfor %}
 	</div>
 
+	<!-- Categories -->
 	<div id="Categories" class="tabcontent">
 		{% assign rawcategories = "" %}
 		{% for post in site.posts %}
@@ -87,7 +90,7 @@ layout: default
 		{% endfor %}
 		
 		{% for category in categories %}
-		<ul>
+		<ul class="tab">
 			<li><a style="text-transform:capitalize;" href="#{{ category | slugify }}">{{ category }}</a></li>
 		</ul>
 		{% endfor %}
