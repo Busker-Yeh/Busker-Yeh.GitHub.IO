@@ -96,14 +96,18 @@ layout: default
 
     <h1 id="posts" class="archive__title">Posts by Date:</h1>
     <div class="archive__content">
-	<ul>
-		{% for post in site.posts limit:3 %}
-		<li>
-			<span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>
-		</li>
-		{% endfor %}
-	</ul>
+		<ul>
+			{% for post in site.posts limit:3 %}
+			<li>
+				<span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>
+			</li>
+			{% endfor %}
+		</ul>
     </div>
+    
+    
+    <img src="assets/img/instruments.jpg"  style="max-width:100%;" />
+    
     
     <h1 class="archive__title">Posts by Category:</h1>
 	<div class="archive__content">
@@ -146,9 +150,6 @@ layout: default
 	</div>
 	
 </div>
-
-
-<img src="assets/img/instruments.jpg"  style="max-width:100%;" />
 
 
 <script>
