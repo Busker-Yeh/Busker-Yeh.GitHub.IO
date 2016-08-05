@@ -15,19 +15,56 @@ layout: default
     
     <div id="Posts" class="tabcontent">
 		<div class="archive__content">
-		<ul>
-			{% for post in site.posts limit:3 %}
-			<li>
-				<span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>
-			</li>
-			{% endfor %}
-		</ul>
+			<ul>
+				{% for post in site.posts limit:3 %}
+				<li>
+					<span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>
+				</li>
+				{% endfor %}
+			</ul>
 		</div>
-		
 	</div>
     
 	<div id="Tags" class="tabcontent">
-	  <p><a href="#tags">{{ site.tags | size }} Tags</a></p>
+		{% comment %}
+		=======================
+		The following part extracts all the tags from your posts and sort tags, so that you do not need to manually collect your tags to a place.
+		=======================
+		{% endcomment %}
+		{% assign rawtags = "" %}
+		{% for post in site.posts %}
+			{% assign ttags = post.tags | join:'|' | append:'|' %}
+			{% assign rawtags = rawtags | append:ttags %}
+		{% endfor %}
+		{% assign rawtags = rawtags | split:'|' | sort %}
+
+		{% comment %}
+		=======================
+		The following part removes dulpicated tags and invalid tags like blank tag.
+		=======================
+		{% endcomment %}
+		{% assign tags = "" %}
+		{% for tag in rawtags %}
+			{% if tag != "" %}
+				{% if tags == "" %}
+					{% assign tags = tag | split:'|' %}
+				{% endif %}
+				{% unless tags contains tag %}
+					{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+				{% endunless %}
+			{% endif %}
+		{% endfor %}
+		
+		{% comment %}
+		=======================
+		The purpose of this snippet is to list all the tags you have in your site.
+		=======================
+		{% endcomment %}
+		{% for tag in tags %}
+		<ul>
+			<li><a style="text-transform:capitalize;" href="#{{ tag | slugify }}">{{ tag }}</a></li>
+		</ul>
+		{% endfor %}
 	</div>
 
 	<div id="Categories" class="tabcontent">
@@ -58,49 +95,6 @@ layout: default
 	{% for category in categories %}
 	<ul>
 		<li><a style="text-transform:capitalize;" href="#{{ category | slugify }}">{{ category }}</a></li>
-	</ul>
-	{% endfor %}
-	
-	
-	
-    <h1 id="tags" class="archive__title">Tags:</h1>    
-	{% comment %}
-	=======================
-	The following part extracts all the tags from your posts and sort tags, so that you do not need to manually collect your tags to a place.
-	=======================
-	{% endcomment %}
-	{% assign rawtags = "" %}
-	{% for post in site.posts %}
-		{% assign ttags = post.tags | join:'|' | append:'|' %}
-		{% assign rawtags = rawtags | append:ttags %}
-	{% endfor %}
-	{% assign rawtags = rawtags | split:'|' | sort %}
-
-	{% comment %}
-	=======================
-	The following part removes dulpicated tags and invalid tags like blank tag.
-	=======================
-	{% endcomment %}
-	{% assign tags = "" %}
-	{% for tag in rawtags %}
-		{% if tag != "" %}
-			{% if tags == "" %}
-				{% assign tags = tag | split:'|' %}
-			{% endif %}
-			{% unless tags contains tag %}
-				{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
-			{% endunless %}
-		{% endif %}
-	{% endfor %}
-	
-	{% comment %}
-	=======================
-	The purpose of this snippet is to list all the tags you have in your site.
-	=======================
-	{% endcomment %}
-	{% for tag in tags %}
-	<ul>
-		<li><a style="text-transform:capitalize;" href="#{{ tag | slugify }}">{{ tag }}</a></li>
 	</ul>
 	{% endfor %}
 
