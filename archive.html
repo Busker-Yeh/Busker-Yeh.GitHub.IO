@@ -66,36 +66,33 @@ layout: default
 	</div>
 
 	<div id="Categories" class="tabcontent">
-	  <p><a href="#categories">{{ site.categories | size }} Categories</a></p>
+		{% assign rawcategories = "" %}
+		{% for post in site.posts %}
+			{% assign tcategories = post.categories | join:'|' | append:'|' %}
+			{% assign rawcategories = rawcategories | append:tcategories %}
+		{% endfor %}
+		{% assign rawcategories = rawcategories | split:'|' | sort %}
+
+
+		{% assign categories = "" %}
+		{% for category in rawcategories %}
+			{% if category != "" %}
+				{% if categories == "" %}
+					{% assign categories = category | split:'|' %}
+				{% endif %}
+				{% unless categories contains category %}
+					{% assign categories = categories | join:'|' | append:'|' | append:category | split:'|' %}
+				{% endunless %}
+			{% endif %}
+		{% endfor %}
+		
+		{% for category in categories %}
+		<ul>
+			<li><a style="text-transform:capitalize;" href="#{{ category | slugify }}">{{ category }}</a></li>
+		</ul>
+		{% endfor %}
 	</div>
 	
-    <h1 id="categories" class="archive__title">Categories:</h1>    
-	{% assign rawcategories = "" %}
-	{% for post in site.posts %}
-		{% assign tcategories = post.categories | join:'|' | append:'|' %}
-		{% assign rawcategories = rawcategories | append:tcategories %}
-	{% endfor %}
-	{% assign rawcategories = rawcategories | split:'|' | sort %}
-
-
-	{% assign categories = "" %}
-	{% for category in rawcategories %}
-		{% if category != "" %}
-			{% if categories == "" %}
-				{% assign categories = category | split:'|' %}
-			{% endif %}
-			{% unless categories contains category %}
-				{% assign categories = categories | join:'|' | append:'|' | append:category | split:'|' %}
-			{% endunless %}
-		{% endif %}
-	{% endfor %}
-	
-	{% for category in categories %}
-	<ul>
-		<li><a style="text-transform:capitalize;" href="#{{ category | slugify }}">{{ category }}</a></li>
-	</ul>
-	{% endfor %}
-
 
     <h1 id="posts" class="archive__title">Posts by Date:</h1>
     <div class="archive__content">
