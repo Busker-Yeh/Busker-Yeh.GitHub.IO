@@ -95,24 +95,25 @@ layout: default
 			<li><a style="text-transform:capitalize;" href="#" class="tablinks" onclick="openType(event, '{{ category | slugify }}')">{{ category }}</a></li>
 		</ul>
 		{% endfor %}
-	</div>
-	
-	<!-- try... categories... -->
-	<div class="archive__content">
-	{% for category in categories %}
-		<div id="{{ category }}" class="tabcontent">
-			<ul class="tab">
-			{% for post in site.posts %}
-				{% if post.categories contains category %}
-				<li>
-					<a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>&nbsp;<span class="date">({{ post.date | date: '%Y %b %d' }})</span>
-				</li>
-				{% endif %}
-			{% endfor %}
-			</ul>
+		
+		<!-- try... categories... -->
+		<div class="archive__content">
+		{% for category in categories %}
+			<div id="{{ category }}" class="tabcontent">
+				<ul class="tab">
+				{% for post in site.posts %}
+					{% if post.categories contains category %}
+					<li>
+						<a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>&nbsp;<span class="date">({{ post.date | date: '%Y %b %d' }})</span>
+					</li>
+					{% endif %}
+				{% endfor %}
+				</ul>
+			</div>
+		{% endfor %}
 		</div>
-	{% endfor %}
 	</div>
+
 	
     <img src="assets/img/instruments.jpg"  style="max-width:100%;" />	
     
