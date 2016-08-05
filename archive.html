@@ -152,22 +152,6 @@ layout: default
 	</ul>
 	{% endfor %}
 	
-	
-	
-	<!---->
-
-	{% for category in categories %}
-			<ul class="tab">
-			{% for post in site.posts %}
-				{% if post.categories contains category %}
-				<li>
-					<a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>&nbsp;<span class="date">({{ post.date | date: '%Y %b %d' }})</span>
-				</li>
-				{% endif %}
-			{% endfor %}
-			</ul>
-	{% endfor %}
-	
 	<div class="archive__content">
 		{% assign rawcategories = "" %}
 		{% for post in site.posts %}
