@@ -147,40 +147,26 @@ layout: default
 	{% endfor %}
 	
 	{% for category in categories %}
-	<ul class="tab">
-		<li><a style="text-transform:capitalize;" href="#" class="tablinks" onclick="openType(event, '{{ category | slugify }}')">{{ category }}</a></li>
-	</ul>
+		<ul class="tab">
+			<li><a style="text-transform:capitalize;" href="#" class="tablinks" onclick="openType(event, '{{ category | slugify }}')">{{ category }}</a></li>
+		</ul>
 	{% endfor %}
 	
-	<div class="archive__content">
-		{% assign rawcategories = "" %}
+	
+	{% for category in categories %}
+	<div id="{{ category }}" class="tabcontent">
+		<ul>
 		{% for post in site.posts %}
-			{% assign tcategories = post.categories | join:'|' | append:'|' %}
-			{% assign rawcategories = rawcategories | append:tcategories %}
-		{% endfor %}
-		{% assign rawcategories = rawcategories | split:'|' | sort %}
-
-
-		{% assign categories = "" %}
-		{% for category in rawcategories %}
-			{% if category != "" %}
-				{% if categories == "" %}
-					{% assign categories = category | split:'|' %}
-				{% endif %}
-				{% unless categories contains category %}
-					{% assign categories = categories | join:'|' | append:'|' | append:category | split:'|' %}
-				{% endunless %}
+			{% if post.categories contains category %}
+			<li>
+				<a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>&nbsp;<span class="date">({{ post.date | date: '%Y %b %d' }})</span>
+			</li>
 			{% endif %}
 		{% endfor %}
-		
-		{% for category in categories %}
-		<div id="{{ category }}" class="tabcontent">
-			<ul>
-				<li><a style="text-transform:capitalize;" href="#{{ category | slugify }}">{{ category }}</a></li>
-			</ul>
-		</div>
-		{% endfor %}
+		</ul>
 	</div>
+	{% endfor %}
+
 </div>
 
 <script>
