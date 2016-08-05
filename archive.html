@@ -6,8 +6,6 @@ layout: default
 	
     <p><a class="archive__back" href="/">&lt;-- back</a></p>
     
-    <p></p>
-    
     <ul class="tab">
 	  <li><a href="#" class="tablinks" onclick="openType(event, 'Posts')">{{ site.posts | size }} Posts</a></li>
 	  <li><a href="#" class="tablinks" onclick="openType(event, 'Tags')">{{ site.tags | size }} Tags</a></li>
@@ -62,7 +60,7 @@ layout: default
 		=======================
 		{% endcomment %}
 		{% for tag in tags %}
-		<ul class="tab">
+		<ul>
 			<li><a style="text-transform:capitalize;" href="#{{ tag | slugify }}">{{ tag }}</a></li>
 		</ul>
 		{% endfor %}
