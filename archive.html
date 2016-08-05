@@ -154,7 +154,7 @@ layout: default
 	
 	
 	{% for category in categories %}
-	<div id="{{ category }}" class="tabcontent">
+	<div id="{{ category | slugify }}" class="tabcontent">
 		<ul>
 		{% for post in site.posts %}
 			{% if post.categories contains category %}
