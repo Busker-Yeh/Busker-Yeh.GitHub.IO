@@ -92,7 +92,7 @@ layout: default
 		
 		{% for category in categories %}
 		<ul class="tab">
-			<li><a style="text-transform:capitalize;" href="" class="tablinks" onclick="openType(event, '{{ category }}')">{{ category }}</a></li>
+			<li><a style="text-transform:capitalize;" class="tablinks" onclick="openType(event, '{{ category | slugify }}')">{{ category }}</a></li>
 		</ul>
 		{% endfor %}
 		
