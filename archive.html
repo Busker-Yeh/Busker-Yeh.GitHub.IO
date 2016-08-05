@@ -101,7 +101,7 @@ layout: default
 	<div class="archive__content">
 	{% for category in categories %}
 		<div id="{{ category }}" class="tabcontent">
-			<ul>
+			<ul class="tab">
 			{% for post in site.posts %}
 				{% if post.categories contains category %}
 				<li>
