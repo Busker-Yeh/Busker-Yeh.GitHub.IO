@@ -91,10 +91,51 @@ layout: default
 		{% endfor %}
 		
 		{% for category in categories %}
+		<li><a href="#" class="tablinks" onclick="openType(event, 'Categories')">{{ site.categories | size }} Categories</a></li>
 		<ul class="tab">
-			<li><a style="text-transform:capitalize;" href="#{{ category | slugify }}">{{ category }}</a></li>
+			<li><a style="text-transform:capitalize;" href="#" class="tablinks" onclick="openType(event, '{{ category | slugify }}')">{{ category }}</a></li>
 		</ul>
 		{% endfor %}
+		<!-- try... -->
+			<div class="archive__content">
+			{% for category in categories %}
+				<h2 id="{{ category | slugify }}" style="text-transform:capitalize;">{{ category }}:</h2>
+				<ul>
+				{% for post in site.posts %}
+					{% if post.categories contains category %}
+					<li>
+						<a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>&nbsp;<span class="date">({{ post.date | date: '%Y %b %d' }})</span>
+					</li>
+					{% endif %}
+				{% endfor %}
+				</ul>
+			{% endfor %}
+			</div>
+			
+			<h1 class="archive__title">Posts by Tag:</h1>
+			<div class="archive__content">
+			{% comment %}
+			=======================
+			The purpose of this snippet is to list all your posts posted with a certain tag.
+			=======================
+			{% endcomment %}
+			{% for tag in tags %}
+				<h2 id="{{ tag | slugify }}" style="text-transform:capitalize;">{{ tag }}:</h2>
+				<ul>
+				{% for post in site.posts %}
+					{% if post.tags contains tag %}
+					<li>
+						<a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>&nbsp;<span class="date">({{ post.date | date: '%Y %b %d' }})</span>&nbsp;-&nbsp;
+						{% for tag in post.tags %}
+						<a class="tag" href="#{{ tag | slugify }}">{{ tag }},</a>
+						{% endfor %}
+					</li>
+					{% endif %}
+				{% endfor %}
+				</ul>
+			{% endfor %}
+			</div>
+
 	</div>
 	
     <img src="assets/img/instruments.jpg"  style="max-width:100%;" />	
@@ -112,44 +153,6 @@ layout: default
     
     
     <h1 class="archive__title">Posts by Category:</h1>
-	<div class="archive__content">
-	{% for category in categories %}
-		<h2 id="{{ category | slugify }}" style="text-transform:capitalize;">{{ category }}:</h2>
-		<ul>
-		{% for post in site.posts %}
-			{% if post.categories contains category %}
-			<li>
-				<a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>&nbsp;<span class="date">({{ post.date | date: '%Y %b %d' }})</span>
-			</li>
-			{% endif %}
-		{% endfor %}
-		</ul>
-	{% endfor %}
-	</div>
-    
-    <h1 class="archive__title">Posts by Tag:</h1>
-	<div class="archive__content">
-	{% comment %}
-	=======================
-	The purpose of this snippet is to list all your posts posted with a certain tag.
-	=======================
-	{% endcomment %}
-	{% for tag in tags %}
-		<h2 id="{{ tag | slugify }}" style="text-transform:capitalize;">{{ tag }}:</h2>
-		<ul>
-		{% for post in site.posts %}
-			{% if post.tags contains tag %}
-			<li>
-				<a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>&nbsp;<span class="date">({{ post.date | date: '%Y %b %d' }})</span>&nbsp;-&nbsp;
-				{% for tag in post.tags %}
-				<a class="tag" href="#{{ tag | slugify }}">{{ tag }},</a>
-				{% endfor %}
-			</li>
-			{% endif %}
-		{% endfor %}
-		</ul>
-	{% endfor %}
-	</div>
 </div>
 
 
