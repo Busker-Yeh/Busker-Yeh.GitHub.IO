@@ -92,14 +92,15 @@ layout: default
 		
 		{% for category in categories %}
 		<ul class="tab">
-			<li><a style="text-transform:capitalize;" class="tablinks" onclick="openType(event, '{{ category | slugify }}')">{{ category }}</a></li>
+			<li><a style="text-transform:capitalize;" href="#" class="tablinks" onclick="openType(event, '{{ category | slugify }}')">{{ category }}</a></li>
 		</ul>
 		{% endfor %}
-		
-		<!-- try... -->
-		<div class="archive__content">
-		{% for category in categories %}
-			<div id="{{ category }}" class="tabcontent">
+	</div>
+	
+	<!-- try... categories... -->
+	<div class="archive__content">
+	{% for category in categories %}
+		<div id="{{ category }}" class="tabcontent">
 			<ul>
 			{% for post in site.posts %}
 				{% if post.categories contains category %}
@@ -109,9 +110,8 @@ layout: default
 				{% endif %}
 			{% endfor %}
 			</ul>
-			</div>
-		{% endfor %}
 		</div>
+	{% endfor %}
 	</div>
 	
     <img src="assets/img/instruments.jpg"  style="max-width:100%;" />	
