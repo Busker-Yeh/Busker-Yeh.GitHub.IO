@@ -95,6 +95,7 @@ layout: default
 			<li><a style="text-transform:capitalize;" href="#" class="tablinks" onclick="openType(event, '{{ category | slugify }}')">{{ category }}</a></li>
 		</ul>
 		{% endfor %}
+		
 		<!-- try... -->
 			<div class="archive__content">
 			{% for category in categories %}
@@ -110,7 +111,10 @@ layout: default
 				</ul>
 			{% endfor %}
 			</div>
-			
+	</div>
+	
+    <img src="assets/img/instruments.jpg"  style="max-width:100%;" />	
+    
 			<h1 class="archive__title">Posts by Tag:</h1>
 			<div class="archive__content">
 			{% comment %}
@@ -135,9 +139,6 @@ layout: default
 			{% endfor %}
 			</div>
 
-	</div>
-	
-    <img src="assets/img/instruments.jpg"  style="max-width:100%;" />	
 
     <h1 id="posts" class="archive__title">Posts by Date:</h1>
     <div class="archive__content">
