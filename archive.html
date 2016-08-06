@@ -33,11 +33,11 @@ layout: default
 		{% endif %}
 	{% endfor %}
 	
-	{% for category in categories %}
 	<ul class="tab">
+	{% for category in categories %}
 		<li><a style="text-transform:capitalize;" href="#" class="tablinks" onclick="openType(event, '{{ category | slugify }}')">{{ category }}</a></li>
-	</ul>
 	{% endfor %}
+	</ul>
 		
 	{% for category in categories %}
 	<div id="{{ category | slugify }}" class="tabcontent">
