@@ -14,7 +14,7 @@ layout: default
 	
 	<!---->
 	<!-- ...categories... -->
-	<div class="archive">
+	<div class="tab">
 		{% assign rawcategories = "" %}
 		{% for post in site.posts %}
 			{% assign tcategories = post.categories | join:'|' | append:'|' %}
