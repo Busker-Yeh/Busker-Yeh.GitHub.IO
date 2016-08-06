@@ -21,7 +21,6 @@ layout: default
 	{% endfor %}
 	{% assign rawcategories = rawcategories | split:'|' | sort %}
 
-
 	{% assign categories = "" %}
 	{% for category in rawcategories %}
 		{% if category != "" %}
@@ -35,12 +34,11 @@ layout: default
 	{% endfor %}
 	
 	{% for category in categories %}
-		<ul class="tab">
-			<li><a style="text-transform:capitalize;" href="#" class="tablinks" onclick="openType(event, '{{ category | slugify }}')">{{ category }}</a></li>
-		</ul>
+	<ul class="tab">
+		<li><a style="text-transform:capitalize;" href="#" class="tablinks" onclick="openType(event, '{{ category | slugify }}')">{{ category }}</a></li>
+	</ul>
 	{% endfor %}
-	
-	
+		
 	{% for category in categories %}
 	<div id="{{ category | slugify }}" class="tabcontent">
 		<ul>
@@ -105,7 +103,7 @@ layout: default
 		{% endcomment %}
 		{% for tag in tags %}
 		<ul>
-			<li><a style="text-transform:capitalize;" href="#{{ tag | slugify }}">{{ tag }}</a></li>
+			<li><a href="#{{ tag | slugify }}">{{ tag }}</a></li>
 		</ul>
 		{% endfor %}
 	</div>
