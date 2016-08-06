@@ -83,7 +83,7 @@ layout: default
 			<li>
 				<a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>&nbsp;<span class="date">({{ post.date | date: '%Y %b %d' }})</span>
 				{% for tag in post.tags %}
-				<a style="text-transform:capitalize;text-decoration: underline;color:red;" class="tag" href="#">|{{ tag }}|</a>
+				<a style="text-transform:capitalize;text-decoration: underline;color:red;" class="tag">|{{ tag }}|</a>
 				{% endfor %}
 			</li>
 			{% endif %}
