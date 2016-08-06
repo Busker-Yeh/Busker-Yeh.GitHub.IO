@@ -80,14 +80,12 @@ layout: default
 		{% endif %}
 	{% endfor %}
 	
-	{% endcomment %}
 	<ul class="tab">
 	{% for tag in tags %}
 		<li><a href="#">{{ tag }}</a></li>
 	{% endfor %}
 	</ul>
 	
-	{% endcomment %}
 	{% for tag in tags %}
 	<div id="{{ tag | slugify }}" class="tabcontent">
 		<ul>
