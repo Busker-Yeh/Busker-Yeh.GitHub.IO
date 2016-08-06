@@ -11,50 +11,7 @@ layout: default
 	  <li><a href="#" class="tablinks" onclick="openType(event, 'Tags')">{{ site.tags | size }} Tags</a></li>
 	  <li><a href="#" class="tablinks" onclick="openType(event, 'Categories')">{{ site.categories | size }} Categories</a></li>
 	</ul>
-	
-	<!---->
-    <!-- Posts -->
-    <div id="Posts" class="tabcontent">
-		<ul>
-			{% for post in site.posts limit:3 %}
-			<li>
-				<span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>
-			</li>
-			{% endfor %}
-		</ul>
-	</div>
 
-	<!-- Categories -->
-	<div id="Categories" class="tabcontent">
-		{% assign rawcategories = "" %}
-		{% for post in site.posts %}
-			{% assign tcategories = post.categories | join:'|' | append:'|' %}
-			{% assign rawcategories = rawcategories | append:tcategories %}
-		{% endfor %}
-		{% assign rawcategories = rawcategories | split:'|' | sort %}
-
-
-		{% assign categories = "" %}
-		{% for category in rawcategories %}
-			{% if category != "" %}
-				{% if categories == "" %}
-					{% assign categories = category | split:'|' %}
-				{% endif %}
-				{% unless categories contains category %}
-					{% assign categories = categories | join:'|' | append:'|' | append:category | split:'|' %}
-				{% endunless %}
-			{% endif %}
-		{% endfor %}
-		
-		{% for category in categories %}
-		<ul>
-			<li><a style="text-transform:capitalize;" href="#{{ category | slugify }}">{{ category }}</a></li>
-		</ul>
-		{% endfor %}
-	</div>	
-	<!---->
-	
-	
 	<!---->
 	<!-- ...categories... -->
 	{% assign rawcategories = "" %}
@@ -96,11 +53,6 @@ layout: default
 	</div>
 	{% endfor %}
 	<!---->	
-    
-	<h1 class="archive__title">Posts by Tag:</h1>
-	<div class="archive__content">
-
-	</div>
 	
 	<!---->
 	{% comment %}
