@@ -100,6 +100,17 @@ layout: default
 	
 	<img src="assets/img/instruments.jpg"  style="max-width:100%;" />
 	
+	<!-- Posts -->
+    <div>
+		<ul>
+			{% for post in site.posts limit:3 %}
+			<li>
+				<span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+
 </div>
 
 
