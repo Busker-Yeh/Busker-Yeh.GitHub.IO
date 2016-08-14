@@ -5,11 +5,15 @@ category: Music
 tags: [definitions, terminology]
 ---
 
-# Several Basic Properties
+# Several Basic Properties of Sounds
+
+## Sound Type / Sound Source:
 
 ## Pitch: 
 
 ## Loudness: 
+
+## Envelope：
 
 ## Duration: 
 
