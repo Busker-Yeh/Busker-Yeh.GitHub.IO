@@ -101,7 +101,7 @@ layout: default
 	<h1 class="archive__title">All {{ site.posts | size }} Posts:</h1>
     <div>
 		<ul>
-			{% for post in site.posts limit:3 %}
+			{% for post in site.posts %}
 			<li>
 				<span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a style="text-transform:capitalize;" href="{{ post.url }}">{{ post.title }}</a>
 			</li>
