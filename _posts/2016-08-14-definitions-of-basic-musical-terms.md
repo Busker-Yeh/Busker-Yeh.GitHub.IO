@@ -13,7 +13,7 @@ tags: [definitions, terminology]
 
 ## Loudness: 
 
-## Envelope：
+## Envelope:
 
 ## Duration: 
 
