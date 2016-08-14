@@ -21,7 +21,7 @@ tags: [definitions, terminology]
 
 ## Clef:
 
-## Pitch: Sharp, Flat, and Natural Notes
+## Sharp, Flat, and Natural Notes:
 
 ## Key Signature:
 
