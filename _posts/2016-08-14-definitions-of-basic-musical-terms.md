@@ -29,7 +29,15 @@ tags: [definitions, terminology]
 
 # The Essential Aspects of a Musical Performance
 
-## 
+## Rhythm:
+
+## Melody:
+
+## Harmony:
+
+## Timbre:
+
+## Texture:
 
 
 
