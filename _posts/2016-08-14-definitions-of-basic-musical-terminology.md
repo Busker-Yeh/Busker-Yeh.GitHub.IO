@@ -5,15 +5,15 @@ category: Music
 tags: [definitions, terminology]
 ---
 
-###Several Basic Elements of Music
+### Several Basic Elements of Music
 
-####Pitch
+#### Pitch
 
-####Duration
+#### Duration
 
-####Loudness
+#### Loudness
 
-####Timbre
+#### Timbre
 
 
 
