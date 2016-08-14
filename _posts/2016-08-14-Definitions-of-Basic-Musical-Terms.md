@@ -27,8 +27,9 @@ tags: [definitions, terminology]
 
 ## Enharmonic Spelling:
 
+# The Essential Aspects of a Musical Performance
 
-
+## 
 
 
 
