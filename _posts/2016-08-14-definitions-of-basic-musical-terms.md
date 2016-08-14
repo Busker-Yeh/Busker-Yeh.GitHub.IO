@@ -9,11 +9,9 @@ tags: [definitions, terminology]
 
 ## Pitch: 
 
-## Duration: 
-
 ## Loudness: 
 
-## Timbre: 
+## Duration: 
 
 # About Notation
 
