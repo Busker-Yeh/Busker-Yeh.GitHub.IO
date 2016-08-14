@@ -7,13 +7,31 @@ tags: [definitions, terminology]
 
 # Several Basic Elements of Music
 
-## Pitch
+## Pitch: 
 
-## Duration
+## Duration: 
 
-## Loudness
+## Loudness: 
 
-## Timbre
+## Timbre: 
+
+# About Notation
+
+## The Staff:
+
+## Clef:
+
+## Pitch: Sharp, Flat, and Natural Notes
+
+## Key Signature:
+
+## Enharmonic Spelling:
+
+
+
+
+
+
 
 
 
