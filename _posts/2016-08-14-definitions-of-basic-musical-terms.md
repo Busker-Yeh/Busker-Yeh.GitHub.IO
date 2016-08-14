@@ -19,7 +19,7 @@ tags: [definitions, terminology]
 
 # Notation
 
-## The Staff:
+## Staffs:
 
 ## Clef:
 
