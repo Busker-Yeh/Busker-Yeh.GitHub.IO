@@ -17,7 +17,7 @@ tags: [definitions, terminology]
 
 ## Duration: 
 
-# About Notation
+# Notation
 
 ## The Staff:
 
