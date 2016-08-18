@@ -1,6 +1,6 @@
 ---
 layout: post
-title: definitions of basic musical terms
+title: Definitions of Basic Musical Terms
 category: Music
 tags: [definitions, terminology]
 ---

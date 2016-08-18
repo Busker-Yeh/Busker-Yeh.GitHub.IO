@@ -1,6 +1,6 @@
 ---
 layout: post
-title: my first blog
+title: My First Blog
 category: Dev
 tags: log
 ---
