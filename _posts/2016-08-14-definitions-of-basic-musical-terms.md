@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Definitions of Basic Musical Terms
-category: Music
+category: music theory
 tags: [definitions, terminology]
 ---
 
