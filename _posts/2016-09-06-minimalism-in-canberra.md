@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Minimalism in Canberra
-category: canberra findings
+category: ideas
 tags: []
 ---
 
