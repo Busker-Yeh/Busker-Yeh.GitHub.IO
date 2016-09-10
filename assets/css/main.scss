@@ -262,6 +262,7 @@ ul {
 
 	/* Create an active/current tablink class */
 	ul.tab li a:focus, .active {
+		color:#15181A;
 		background-color: #292F33;
 	}
 
