@@ -262,14 +262,14 @@ ul {
 
 	/* Create an active/current tablink class */
 	ul.tab li a:focus, .active {
-		background-color: #ccc;
+		background-color: #15181A;
 	}
 
 	/* Style the tab content */
 	.tabcontent {
 		display: none;
 		padding: 6px 12px;
-		border: 1px solid #ccc;
+		border: 1px solid #15181A;
 		border-top: none;
 	}
 }
