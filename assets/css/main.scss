@@ -247,7 +247,7 @@ ul {
 	/* Style the links inside the list items */
 	ul.tab li a {
 		display: inline-block;
-		color: yellow;
+		color: #F5F8FA;
 		text-align: center;
 		padding: 14px 16px;
 		text-decoration: none;
@@ -257,7 +257,7 @@ ul {
 
 	/* Change background color of links on hover */
 	ul.tab li a:hover {
-		background-color: #ddd;
+		background-color: #3E474D;
 	}
 
 	/* Create an active/current tablink class */
