@@ -5,8 +5,8 @@ function oneAuthorCite(options) {
             options.first = options.first.substring(0,1).toUpperCase() + ". ";
         }
     }
-    if (options.initial != ""){
-        options.initial = options.initial.substring(0,1).toUpperCase() + ". ";
+    if (options.middle != ""){
+        options.middle = options.middle.substring(0,1).toUpperCase() + ". ";
     }
     if (options.last != ""){
         options.last = options.last.charAt(0).toUpperCase() +
@@ -18,7 +18,7 @@ function oneAuthorCite(options) {
             options.last += ". ";
         }
     }
-    var name = options.last + options.first + options.initial;
+    var name = options.last + options.first + options.middle;
     if (name == ""){
         if (options.company != ""){
             name = options.company;
@@ -58,7 +58,7 @@ function oneAuthorCite(options) {
 function createReference(){
     var reference = oneAuthorCite({
         first: O('firstName').value,
-        initial: O('initial').value,
+        middle: O('middleName').value,
         last: O('lastName').value,
         title: O('title').value,
         year: O('pubYear').value,
