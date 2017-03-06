@@ -31,7 +31,7 @@ layout: default
 	
 	<ul class="tab">
 	{% for tag in tags %}
-		<li><a style="font-size:xx-small; padding:5px;" href="#" class="tablinks" onclick="openType(event, '{{ tag | slugify }}')">{{ tag }}</a></li>
+		<li><a style="font-size:small; padding:5px;" href="#" class="tablinks" onclick="openType(event, '{{ tag | slugify }}')">{{ tag }}</a></li>
 	{% endfor %}
 	</ul>
 	
