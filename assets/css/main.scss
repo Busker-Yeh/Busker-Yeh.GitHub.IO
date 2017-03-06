@@ -240,13 +240,25 @@ ul {
         }
     }
     
-	ul.tab {
+	ul.categories {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
 		border: 1px solid #15181A;
 		background-color: #292F33;
+		text-transform:capitalize;
+	}
+	
+	ul.tags {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		border: 1px solid #15181A;
+		background-color: #292F33;
+		text-transform:capitalize;
+		font-size:small;
 	}
 
 	/* Float the list items side by side */
