@@ -247,7 +247,6 @@ ul {
 		overflow: hidden;
 		border: 1px solid #15181A;
 		background-color: #292F33;
-		text-transform:capitalize;
 	}
 
 	/* Float the list items side by side */
@@ -262,6 +261,7 @@ ul {
 		text-decoration: none;
 		transition: 0.3s;
 		font-size: 17px;
+		text-transform:capitalize;
 	}
 
 	/* Change background color of links on hover */
