@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Should Alternative Medicine Receive the Same Recognition?
+title: Alternative Medicine?
 category: ideas
 ---
 Complementary and alternative medicine is defined as a wide range of health care medicines and therapies, whose forms of treatment does not include medicines (National Health and Medical Research Council, 2015). In specific, alternative medicine specifically means the treatments which replace the conventional Western medicine, which is common used to cure or mitigate disease (Tabish, 2008). Compared to conventional Western medicine, alternative medicine has longer histories. Two forms of alternative medicine, traditional Chinese medicine and Ayurveda, which is a traditional Hindu system of medicine, can be traced back to 200 BC (Tabish, 2008; Jaiswal & Williams, 2016). They were the only forms of treatment available for those cultures, before the introduction of conventional Western medicine. In recent years, alternative medicine have been developed and widely used in the world. For example, some forms of alternative medicine or complementary medicine have been used by 70% to 80% of the general population in many developed countries (World Health Organisation, 2016). In Australia, the use of it has reached to 69% of patients (Emmerton, Fejzic, & Tett, 2012) and 82% of patients with multiple sclerosis (World Health Organisation, 2013). However, alternative medicine have not yet obtained the same official recognition and support as the conventional Western medicine. In this essay, it is argued that alternative medicine should be equally recognised and supported as conventional Western medicine, because they use different methodologies and philosophies to deal with medical problems, also they provide the patients an immense humanistic concern.
@@ -13,18 +13,29 @@ To conclude, alternative medicine can complement conventional Western medicine i
 
 
 References
+
 Brosnan, C. (2015). “Quackery” in the academy? Professional knowledge, autonomy and the debate over complementary medicine degrees. Sociology, 49(6), 1047–1064.
 Chang, C., & Gershwin, M. E. (2012). Integrative medicine in allergy and immunology. Clinical Reviews in Allergy & Immunology, 44(3), 208–228.
 Clark-Grill, M. (2010). When listening to the people: Lessons from complementary and alternative medicine (CAM) for Bioethics. Journal of Bioethical Inquiry, 7(1), 71–81.
+
 Eisenberg, D. M. (2001). Perceptions about complementary therapies relative to conventional therapies among adults who use Both: Results from a national survey. Annals of Internal Medicine, 135(5), 344.
+
 Elder, C. R. (2013). Integrating Naturopathy: Can We Move Forward? The Permanente Journal, 17(4), 80–83.
 Emmerton, L., Fejzic, J., & Tett, S. E. (2012). Consumers’ experiences and values in conventional and alternative medicine paradigms: A problem detection study (PDS). BMC Complementary and Alternative Medicine, 12(1), 39. 
+
 Jaiswal, Y. S., & Williams, L. L. (2017). A glimpse of Ayurveda – The forgotten history and principles of Indian traditional medicine. Journal of Traditional and Complementary Medicine, 7(1), 50–53. 
+
 Kok, E. T., Jong, M. C., Gravendeel, B., Van Leeuwen, W. B., & Baars, E. W. (2015). Resistance to antibiotics and Antifungal medicinal products: Can complementary and alternative medicine help solve the problem in common infection diseases? The introduction of a Dutch research consortium. Evidence-Based Complementary and Alternative Medicine, 2015, 1–6. 
+
 Roca, I., Akova, M., Baquero, F., Carlet, J., Cavaleri, M., Coenen, S., … Vila, J. (2015). The global threat of antimicrobial resistance: science for intervention. New Microbes and New Infections, 6, 22–29.
+
 Roberts, J. A., Abdul-Aziz, M. H., Lipman, J., Mouton, J. W., Vinks, A. A., Felton, T. W., … Kuti, J. L. (2014). Individualised antibiotic dosing for patients who are critically ill: Challenges and potential solutions. The Lancet Infectious Diseases, 14(6), 498–509. 
+
 Tabish, S. A. (2008). Complementary and Alternative Healthcare: Is it Evidence-based? International Journal of Health Sciences, 2(1), V–IX.
+
 National Health and Medical Research Council. (2015, March 4). Complementary medicines. Retrieved from https://www.nhmrc.gov.au/health-topics/complementary-medicines?
 World Health Organization (2013). WHO traditional medicine strategy: 2014-2023. Hong Kong SAR, China: World Health Organization.
+
 World Health Organization. (2016, February 18). Traditional medicine. Retrieved January 24, 2017, from http://www.wpro.who.int/china/mediacentre/factsheets/traditional_medicine/en/
+
 
