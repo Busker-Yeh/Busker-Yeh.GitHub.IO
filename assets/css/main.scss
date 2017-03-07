@@ -242,6 +242,9 @@ ul {
             border-bottom: 1px dashed $color-black;
         }
     }
+    &__copyright {
+		padding: 5px;
+    }
 }
 
 .archive {
