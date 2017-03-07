@@ -110,6 +110,9 @@ ul {
     p {
         padding: 5px;
         padding-left: 10px;
+        @media screen and (max-width: $br) {
+                    padding: 10px 0 10px 0;
+        }
     }
 }
 
