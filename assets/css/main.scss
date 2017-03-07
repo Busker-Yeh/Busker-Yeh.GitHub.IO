@@ -168,6 +168,10 @@ ul {
         font-size: 1em;
         font-style: italic;
     }
+    &__copyright {
+		margin: auto;
+		text-align: center;
+    }
     &__content {
         padding-top: 40px;
         h1 {
@@ -241,8 +245,6 @@ ul {
             border: 0;
             border-bottom: 1px dashed $color-black;
         }
-    }
-    &__copyright {
     }
 }
 
