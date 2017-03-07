@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Warm Water (T03.160912)
+title: Warm Water
 category: original music
 tags: [electroacoustic, tape]
 ---
