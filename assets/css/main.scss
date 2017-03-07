@@ -163,11 +163,11 @@ ul {
         text-decoration: underline;
         margin-top: 20px;
         margin-bottom: 5px;
-        a {
+        .date {
 			font-size: 1em;
 			font-weight: 700;
 			font-style: italic;
-			colour: black;
+			color: black;
         }
     }
     &__date {
