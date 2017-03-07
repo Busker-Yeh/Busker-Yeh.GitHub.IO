@@ -165,11 +165,13 @@ ul {
         margin-bottom: 5px;
     }
     &__date {
+		padding: auto;
 		margin: auto;
         font-size: 1em;
         font-style: italic;
     }
     &__copyright {
+		padding: auto;
 		margin: auto;
 		text-align: center;
     }
