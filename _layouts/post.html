@@ -10,7 +10,7 @@ layout: default
 	<p class="post__meta">{{ page.tags }}</p>
 	
 	<div class="post__content">
-		{{ content }}&nbsp;&#40;<a class="post__date">{{ page.date | date: '%B %-d, %Y' }}</a>&#41;
+		{{ content }}&nbsp;&#40;{{ page.date | date: '%B %-d, %Y' }}&#41;
 	</div>
 	<br />
 </div>
