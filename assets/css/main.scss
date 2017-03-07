@@ -163,12 +163,15 @@ ul {
         text-decoration: underline;
         margin-top: 20px;
         margin-bottom: 5px;
-		a {
+        a {
 			font-size: 1em;
 			font-style: italic;
-		}
+        }
     }
-
+    &__date {
+        font-size: 1em;
+        font-style: italic;
+    }
     &__content {
         padding-top: 40px;
         h1 {
