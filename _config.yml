@@ -5,8 +5,7 @@
 # My variables
 name: Yeh's Music
 description: YEH Z. & HIS MUSIC
-google_verification: google5fcb9a0aa1e7395b.html
-
+google_verification: null
 
 # File management
 include: [".htaccess"]
